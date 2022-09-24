@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Mobile First*/
+.container-menu{
+    background-color: #515151;
+    width: 100%;
+    height: 70px;
+}
+.container-menu #B{
+    background-color: pink;
+
+    width: 25%;
+    height: 30px;
+
+    position: absolute;
+    top: 20px;
+    left: 13px;
+}
+
+.container-menu #C{
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+
+    /*hacer a que quede abajo*/
+    position: absolute;
+    top: 10%;
+}
+
+    /*section Main Mobile-First*/
+.main {
+    background-color:  #e75480;
+
+    width: 100%;
+    height: 400px;
+}
+
+.main #center-E{
+    background-color: #515151;
+    width: 80%;
+    height: 200px;
+
+    float: left;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+    /*section F-G-H Mobile-First*/
+.container-F{    
+    width: 100%;
+    height: 200px;
+    background-color: #B5B2B2;
+}
+
+.container-F #secction-G{
+    background-color: blue;
+    width: 30%;
+    height: 130px;
+
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+.container-F #section-H{
+    background-color: blue;
+    width: 55%;
+    height: 130px;
+
+    float: right;
+    margin-top: 40px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+     /*section K-L Mobile-First*/
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color:#eae6ca;
+}
+
+.footer #section-K{
+    width: 30%;
+    height: 100px;
+    background-color: #6f3730;
+
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.footer #section-L{
+    width: 55%;
+    height: 100px;
+    background-color: #6f3730;
+
+    float: right;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+/*------------------ Desktop Version ------------------*/
