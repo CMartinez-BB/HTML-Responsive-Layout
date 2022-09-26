@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
+
+
 /*Mobile First*/
-.container-menu{
+.container-menu {
     background-color: #515151;
     width: 100%;
     height: 70px;
 }
-.container-menu #B{
+
+.container-menu #B {
     background-color: pink;
 
-    width: 25%;
+    width: 10%;
     height: 30px;
 
     position: absolute;
@@ -20,25 +23,31 @@
     left: 13px;
 }
 
-.container-menu #C{
-    width: 100%;
+.container-menu #C {
+    /**width: 100%;
     height: 30px;
+    background-color: gray;**/
+
+    /*hacer a que quede abajo*/
+    /*top: 10%;*/
+
     background-color: gray;
 
     /*hacer a que quede abajo*/
-    position: absolute;
-    top: 10%;
+    width: 100%;
+    margin-top: 70px;
+    float: left;
 }
 
-    /*section Main Mobile-First*/
+/*section Main Mobile-First*/
 .main {
-    background-color:  #e75480;
+    background-color: #e75480;
 
     width: 100%;
     height: 400px;
 }
 
-.main #center-E{
+.main #center-E {
     background-color: #515151;
     width: 80%;
     height: 200px;
@@ -47,14 +56,15 @@
     margin-left: 10%;
     margin-top: 100px;
 }
-    /*section F-G-H Mobile-First*/
-.container-F{    
+
+/*section F-G-H Mobile-First*/
+.container-F {
     width: 100%;
     height: 200px;
     background-color: #B5B2B2;
 }
 
-.container-F #secction-G{
+.container-F #secction-G {
     background-color: blue;
     width: 30%;
     height: 130px;
@@ -64,7 +74,7 @@
     margin-top: 40px;
 }
 
-.container-F #section-H{
+.container-F #section-H {
     background-color: blue;
     width: 55%;
     height: 130px;
@@ -75,14 +85,14 @@
     margin-left: 5%;
 }
 
-     /*section K-L Mobile-First*/
-.footer{
+/*section K-L Mobile-First*/
+.footer {
     width: 100%;
     height: 200px;
-    background-color:#eae6ca;
+    background-color: #eae6ca;
 }
 
-.footer #section-K{
+.footer #section-K {
     width: 30%;
     height: 100px;
     background-color: #6f3730;
@@ -92,7 +102,7 @@
     margin-top: 20px;
 }
 
-.footer #section-L{
+.footer #section-L {
     width: 55%;
     height: 100px;
     background-color: #6f3730;
@@ -104,3 +114,233 @@
 }
 
 /*------------------ Desktop Version ------------------*/
+@media screen and (max-width: 1600px) {
+
+
+
+    .container-menu #C {
+        /* background-color: white;
+
+        width: 10%;
+        height: 30px; */
+        width: 10%;
+        height: 30px;
+
+        background-color: pink;
+        margin-top: 20px;
+        float: right;
+        margin-right: 13px;
+
+
+    }
+
+
+    .main #center-E {
+        background-color: #515151;
+        width: 20%;
+        height: 200px;
+
+        float: left;
+        margin-left: 40%;
+        margin-top: 100px;
+    }
+
+    /*------------ div en 4 ------------*/
+
+    .container-F {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+
+    }
+
+    .container-F #secction-G {
+        background-color: blue;
+        width: 20%;
+        height: 130px;
+
+        float: left;
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+
+    .container-F #section-I {
+        background-color: blue;
+        width: 20%;
+        height: 130px;
+
+        float: left;
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+
+    .container-F #section-H {
+        background-color: blue;
+        width: 20%;
+        height: 130px;
+
+        float: left;
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+
+    .container-F #section-J {
+        background-color: blue;
+        width: 20%;
+        height: 130px;
+
+        float: left;
+        margin-right: 5%;
+        margin-top: 40px;
+    }
+
+    /*------------ div volteado K-L ------------*/
+    .footer{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+    }
+
+    .footer #section-K {
+        width: 80%;
+        height: 100px;
+        background-color: #6f3730;
+
+        float: left;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+
+    .footer #section-L{
+        width: 10%;
+        height: 100px;
+        background-color: #6f3730;
+    
+        float: right;
+        margin-top: 20px;
+        margin-right: 5%;
+    
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    /*Mobile First*/
+.container-menu {
+    background-color: #515151;
+    width: 100%;
+    height: 100px;
+}
+
+.container-menu #B {
+    background-color: pink;
+
+    width: 10%;
+    height: 30px;
+
+    position: absolute;
+    top: 20px;
+    left: 13px;
+}
+
+.container-menu #C {
+    
+    background-color: gray;
+
+    /*hacer a que quede abajo*/
+    width: 100%;
+    margin-top: 70px;
+    float: left;
+}
+
+/*section Main Mobile-First*/
+.main {
+    background-color: #e75480;
+
+    width: 100%;
+    height: 400px;
+}
+
+.main #center-E {
+    background-color: #515151;
+    width: 80%;
+    height: 200px;
+
+    float: left;
+    margin-left: 10%;
+    margin-top: 100px;
+}
+
+/*section F-G-H Mobile-First*/
+.container-F{
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-F #secction-G {
+    width: 30%;
+    height: 100px;
+    background-color: blue;
+
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.container-F #section-J {
+    width: 55%;
+    height: 100px;
+    background-color: blue ;
+
+    float: right;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+
+.container-F #section-H{
+    display: none;
+
+}
+
+.container-F #section-I{
+    display: none;
+
+}
+
+/*section K-L Mobile-First*/
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #eae6ca;
+}
+
+.footer #section-K {
+    width: 30%;
+    height: 100px;
+    background-color: #6f3730;
+
+    float: left;
+    margin-left: 5%;
+    margin-top: 20px;
+
+
+}
+
+.footer #section-L {
+    width: 55%;
+    height: 100px;
+    background-color: #6f3730;
+
+    float: right;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+}
